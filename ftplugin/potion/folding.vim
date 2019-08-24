@@ -2,11 +2,11 @@ setlocal shiftwidth=4
 setlocal foldmethod=expr
 setlocal foldexpr=GetPotionFold(v:lnum)
 
-function! s:IndentLevel(lnum)
+function! IndentLevel(lnum)
     return indent(a:lnum) / &shiftwidth
 endfunction
 
-function! s:NextNonBlankLine(lnum)
+function! NextNonBlankLine(lnum)
     "Numlines is the total lines in the file
     let numlines = line('$')
     let current = a:lnum + 1

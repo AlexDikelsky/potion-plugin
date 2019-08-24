@@ -4,7 +4,7 @@ endif
 
 "Read as: any number of digits, maybe a ., then any number of digits, then
 "maybe an e, then any number of digits
-syntax match potionNumber "\v\d*\.?\d*e?[+-]?\d*"
+syntax match potionNumber "\v\d+\.?\d*e?[+-]?\d*"
 "\x* matches hexidemimal digits
 syntax match potionNumber "\v0x\x*"
 

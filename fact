@@ -1,0 +1,13 @@
+function! Fiban(num)
+    if (a:num <= 1)
+	return a:num
+    else
+	return (Fiban(a:num - 2) + Fiban(a:num - 1))
+endfunction
+
+"Runs the function a bunch of time
+let i=1
+while (i < 9)
+    echom Fiban(i)
+    let i = i + 1
+endwhile
